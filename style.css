@@ -1,0 +1,156 @@
+/*Réinitialisation de base et style du corps*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.portfolio-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.portfolio-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    color: #A0522D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-header .title {
+    font-size: 1.3em;
+    color: #ff6347;
+    font-weight: normal;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gray);
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex: 2;
+    min-width: 300px;
+}
+
+.right-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.left-column h2 {
+    color: darksalmon;
+    border-bottom-color: #ff7f50;
+}
+
+h3 {
+    font: size 1.2em;
+    color: chocolate;
+    margin-bottom: 5px;
+}
+
+.company-date,
+.institution-date {
+    color: indianred;
+    font-style: italic;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 1.3em;
+    position: relative;
+}
+
+ul li::before {
+    content: '°';
+    color: sienna;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-info p {
+    margin-right: 10px;
+    color: #000000;
+    width: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: chocolate;
+    margin: 30px 0;
+}
+
+.skill-summary p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+@media(max-width:768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .portfolio-container {
+        padding: 20px;
+    }
+    .portfolio-header h1 {
+        font-size: 2.2em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+}
